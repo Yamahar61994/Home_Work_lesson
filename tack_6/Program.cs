@@ -6,12 +6,13 @@
 7 -> нет
 */
 Console.Write("Введите число = ");
-int chislo = Console.Read();
-if ((chislo%2)==0);
+int x = Console.Read();
+
+if (x % 2 == 1)
 {
-	Console.WriteLine("Число чётное");
+	Console.WriteLine("Число НЕчётное!!!");
 }
 else
 {
-	Console.WriteLine("Число НЕчётное!!!");
+	Console.WriteLine("Число чётное");
 }
