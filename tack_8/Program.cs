@@ -7,10 +7,9 @@
 
 Console.WriteLine("Введите число N");
 int n = Convert.ToInt32(Console.ReadLine());
-int i = n;
-n = -n;
-while (n<=i)
+
+while (n>0)
 {
-	Console.Write($"{n} ");
-	n++;
+	if (n%2 == 0)	Console.Write($"{n} ");
+n=n-1;
 }
