@@ -2,17 +2,15 @@
 3, 5 -> 243 (3⁵)
 2, 4 -> 16
 */
+Console.WriteLine("Введите число А: ");
+int A = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число B: ");
+int B = Convert.ToInt32(Console.ReadLine());
+double step = A;
 
-Console.WriteLine("Введите значение А: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите значение B: ");
-int b = Convert.ToInt32(Console.ReadLine());
-
-double NumberDegree (int a, int b)
+for (int i = 1; i < B ; i++)
 {
-	double step = Math.Pow(a,b);
-	return step;
+	step = step * A;
 }
-Console.WriteLine(NumberDegree(a,b));
 
-//Михаил, не понюмаю, зачем нужен цикл?
+Console.WriteLine($"Число А в степени В =  {step}");
